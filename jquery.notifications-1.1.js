@@ -61,12 +61,12 @@
 		}
 		
 		if ($("#errorExplanation").length) {
-		  //if there exists an errorExplanation div from rails,
-		  //hide the errors and list them down as notifications
-      $("#errorExplanation").hide();
-      $("#errorExplanation li").each(function(index) {
-        $.n.error($(this).text());
-      })
+			// if there exists an errorExplanation div from rails 3.0,
+		  	// hide the errors and list them down as notifications
+      	  	$("#errorExplanation").hide();
+      	  	$("#errorExplanation li").each(function(index) {
+        		$.n.error($(this).text());
+      		})
 		}
 	};
 	

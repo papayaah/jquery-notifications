@@ -8,6 +8,11 @@ You can opt to download the minified plugin or the non minified version. And don
 
 h2. Updates:
 
+h3. January 24, 2010 - midday
+
+Merge fork changes from my colleague, <a href="https://github.com/corroded">Eumir Gaspar</a> - hiding the default #errorExplanation div from Rails and uses my notifications instead to show the errors.
+This changes does nothing if you don't have the div#errorExplanation anywhere on the html page.
+  
 h3. January 24, 2010
 
 My extraordinaire colleague <a href="https://github.com/corroded">Eumir Gaspar</a> wanted to fork my plugin, unfortunately I was selfish so it was nowhere at any SCM.  
