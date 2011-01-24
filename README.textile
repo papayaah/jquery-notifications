@@ -8,11 +8,12 @@ You can opt to download the minified plugin or the non minified version. And don
 
 h2. Updates:
 
-h2. January 24, 2010
-My colleague, <a href="https://github.com/corroded">Eumir Gaspar</a> wanted to fork my plugin, unfortunately it was nowhere at any SCM. So
-today I push it to github so anyone who would want to continue enhance or modify it can now fork it and I can do the merging later on.
+h3. January 24, 2010
 
-h2. August 17, 2009
+My colleague, <a href="https://github.com/corroded">Eumir Gaspar</a> wanted to fork my plugin, unfortunately I was selfish so it was nowhere at any SCM.  
+So today I push it to Github so anyone who would want to continue enhance or modify it can now fork it and we can all merge it later on.
+
+h3. August 17, 2009
 
 Due to one user requests (Tomasz Król), I added an option to change the notification effect to either fade, or slide.
 
@@ -29,16 +30,20 @@ Just load both the js and css file into your page:
 
 And start using it immediately:
 
+<pre>
 $.n("Hey you!");
+</pre>
 
 By default it creates a notice notification. The other types of notification messages are success, warning and error which all are completly customizable through CSS.
 
 h2. Complete usage instruction
 
-$.n("", options) - to show a notifice notification
-$.n.success("", options) - to show a success notification
-$.n.warning("", options) - to show a warning notification
-$.n.error("", options) - to show an error notifcation
+<pre>
+$.n("", options) // to show a notifice notification
+$.n.success("", options) // to show a success notification
+$.n.warning("", options) // to show a warning notification
+$.n.error("", options) // to show an error notifcation
+</pre>
 
 h2. The following are the possible options:
 
@@ -49,9 +54,12 @@ close - the text or image that would show up for sticky notifications. Default i
 effect - the notification show/hide effect, the default is fade. You can either use "slide" or "fade".
 
 If you want to set these options only once, override it after the plugin has loaded like so:
+<pre>
 $.n.defaults.timeout = 5000;
 $.n.defaults.close = "close";
+</pre>
 And each call to any of the notification will use these properties unless override through the option parameters.
 
 h2. Known Issues:
+
 Change the property "position:absolute" to "float:right" on the selector "#jquery-notifications div > a" to fix the issue with the close icon/text that seems to pop out when the sliding effect is used. Though things would look pretty ugly on IE. If anyone is able to provide a stable fix this let me know and I'll make a new release together with your fix.
