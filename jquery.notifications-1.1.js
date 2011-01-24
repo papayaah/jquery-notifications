@@ -59,6 +59,15 @@
 			var notificationsDelayer = delayTimer(settings.timeout);
 			notificationsDelayer(update, { counter: counter, effect: settings.effect, fadeSpeed : settings.fadeSpeed } );
 		}
+		
+		if ($("#errorExplanation").length) {
+		  //if there exists an errorExplanation div from rails,
+		  //hide the errors and list them down as notifications
+      $("#errorExplanation").hide();
+      $("#errorExplanation li").each(function(index) {
+        $.n.error($(this).text());
+      })
+		}
 	};
 	
 	$.notifications.success = function( msg, options ){		
