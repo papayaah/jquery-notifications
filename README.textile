@@ -10,7 +10,7 @@ h2. Updates:
 
 h3. January 24, 2010
 
-My colleague, <a href="https://github.com/corroded">Eumir Gaspar</a> wanted to fork my plugin, unfortunately I was selfish so it was nowhere at any SCM.  
+My extraordinaire colleague <a href="https://github.com/corroded">Eumir Gaspar</a> wanted to fork my plugin, unfortunately I was selfish so it was nowhere at any SCM.  
 So today I push it to Github so anyone who would want to continue enhance or modify it can now fork it and we can all merge it later on.
 
 h3. August 17, 2009
@@ -39,10 +39,10 @@ By default it creates a notice notification. The other types of notification mes
 h2. Complete usage instruction
 
 <pre>
-$.n("", options) // to show a notifice notification
-$.n.success("", options) // to show a success notification
-$.n.warning("", options) // to show a warning notification
-$.n.error("", options) // to show an error notifcation
+$.n("", options) - to show a notifice notification
+$.n.success("", options) - to show a success notification
+$.n.warning("", options) - to show a warning notification
+$.n.error("", options) - to show an error notifcation
 </pre>
 
 h2. The following are the possible options:
@@ -62,4 +62,6 @@ And each call to any of the notification will use these properties unless overri
 
 h2. Known Issues:
 
-Change the property "position:absolute" to "float:right" on the selector "#jquery-notifications div > a" to fix the issue with the close icon/text that seems to pop out when the sliding effect is used. Though things would look pretty ugly on IE. If anyone is able to provide a stable fix this let me know and I'll make a new release together with your fix.
+Change the property "position:absolute" to "float:right" on the selector "#jquery-notifications div > a" to fix the issue with the close icon/text that seems to pop out when the sliding effect is used. Though things would look pretty ugly on IE. 
+
+If anyone is able to provide a stable fix this let me know and I'll make a new release together with your fix.
