@@ -1,0 +1,11 @@
+/* jQuery Notifications plugin - http://programmingmind.com */
+/* notification container */
+#jquery-notifications {position: fixed; width: 100%; left: 0; top: 0}
+/* common style properties for all the notification messages */
+#jquery-notifications div.notice, #jquery-notifications div.success, #jquery-notifications div.warning, #jquery-notifications div.error {margin: 0; padding: 5px; padding-left: 10px; border-bottom: 2px solid}
+#jquery-notifications div.notice {background:#6C9FFC; color:#061A72; border-color:#061A72}
+#jquery-notifications div.success {background:#96F96F; color:#045419; border-color:#045419}
+#jquery-notifications div.warning {background:#F7AE57; color:#753903; border-color:#753903}
+#jquery-notifications div.error {background:#F97C6F; color:#570F01; border-color:#570F01}
+/* style property for the close text */
+#jquery-notifications div > a {position:absolute; right: 0; margin-right:10px; color: #000000; text-decoration:none; border: 1px solid black; padding-right: 5px; padding-left: 5px}` 
