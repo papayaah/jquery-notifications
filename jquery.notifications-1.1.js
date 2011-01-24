@@ -29,10 +29,10 @@
         var settings = $.extend({}, $.notifications.defaults, options);
         
 		if (!template) {
-        	template = $('<div id="jquery-notifications"></div>').appendTo(document.body);
+        	template = $('<div id="jquery-notifications"></div>').prependTo(document.body);
 		}
 
-		var n = $( '<div class="' + settings.type + '" id="jquery-notifications-' + counter + '">' + msg + '</div>').hide().appendTo("#jquery-notifications");
+		var n = $( '<p class="' + settings.type + '" id="jquery-notifications-' + counter + '">' + msg + '</p>').hide().appendTo("#jquery-notifications");
 		if( settings.effect == "fade" ) {
 			n.fadeIn( settings.fadeSpeed );
 		} else {
