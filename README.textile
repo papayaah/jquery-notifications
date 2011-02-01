@@ -6,6 +6,10 @@ Please go to <a href="http://www.programmingmind.com/jquery-notification-v1.1">m
 
 You can opt to download the minified plugin or the non minified version. And don't forget the compressed CSS.
 
+h2. Screenshot 
+
+!http://img97.imageshack.us/img97/1439/notificationsdemo.png!
+
 h2. Updates:
 
 h3. January 24, 2010 - midday
